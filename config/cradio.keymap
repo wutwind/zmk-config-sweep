@@ -11,6 +11,9 @@
 #define NUM 2
 #define FUN 3
 
+&lt { quick-tap-ms = <219>; };
+&mt { quick-tap-ms = <219>; };
+
 / {
     behaviors {
         hml: home_row_mod_left {
@@ -149,7 +152,7 @@
             timeout-ms = <25>;
         };
 
-        AmpersandSign {
+        AmpersandSign {      
             bindings = <&kp AMPS>;
             key-positions = <6 16>;
             timeout-ms = <25>;
@@ -169,7 +172,7 @@
 
         PipeSign {
             bindings = <&kp PIPE>;
-            key-positions = <25 26>;
+            key-positions = <26 27>;
             timeout-ms = <25>;
         };
 
@@ -217,9 +220,9 @@
         nav_layer {
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                  &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &none             &kp PSCRN     &none         &none         &none         &none          
+                  &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT    &kp C_VOL_UP       &kp PSCRN     &none         &none         &none         &none          
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT    &none             &kp CAPS      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
+                  &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHIFT   &kp C_VOL_DN       &kp CAPS      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                   &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp DEL           &kp INS       &kp HOME      &kp PG_DN     &kp PG_UP     &kp END
             // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
@@ -231,9 +234,9 @@
         num_layer {
             bindings = <
             // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                  &kp LBKT      &kp N7        &kp N8        &kp N9        &none             &none         &kp SPACE     &none         &none         &kp BSPC          
+                  &kp LBKT      &kp N7        &kp N8        &kp N9        &none            &kp C_VOL_UP   &kp SPACE     &none         &none         &kp BSPC          
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-                  &kp SEMI      &kp N4        &kp N5        &kp N6        &none             &none         &kp RSHFT     &kp RCTRL     &kp RALT      &kp RGUI
+                  &kp SEMI      &kp N4        &kp N5        &kp N6        &none            &kp C_VOL_DN   &kp RSHFT     &kp RCTRL     &kp RALT      &kp RGUI
             // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
                   &kp GRAVE     &kp N1        &kp N2        &kp N3        &kp DOT           &none         &kp SPACE     &none         &none         &none
             // ╰─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────╯
