@@ -199,6 +199,17 @@
             key-positions = <26 27 28>;
             timeout-ms = <32>;
         };
+
+        EscThumbLeft {
+            bindings = <&kp ESC>;
+            key-positions = <30 31>;
+            timeout-ms = <32>;
+        };
+        EscThumbLeft {
+            bindings = <&kp ESC>;
+            key-positions = <32 33>;
+            timeout-ms = <32>;
+        };
     };
 
     keymap {
