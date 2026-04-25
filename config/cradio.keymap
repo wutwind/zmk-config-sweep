@@ -191,22 +191,23 @@
 
         LangLeft {
             bindings = <&kp LC(SPACE)>;
-            key-positions = <16 17 18>;
-            timeout-ms = <32>;
-        };
-        LangLeftAlt {
-            bindings = <&kp LG(SPACE)>;
-            key-positions = <16 18>;
+            key-positions = <11 12 13>;
             timeout-ms = <32>;
         };
         LangRight {
             bindings = <&kp RC(SPACE)>;
-            key-positions = <11 12 13>;
+            key-positions = <16 17 18>;
             timeout-ms = <32>;
         };
-        LangRightAlt {
+
+        SpotlightLeft {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <21 22>;
+            timeout-ms = <32>;
+        };
+        SpotlightRight {
             bindings = <&kp RG(SPACE)>;
-            key-positions = <11 13>;
+            key-positions = <27 28>;
             timeout-ms = <32>;
         };
 
